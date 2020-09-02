@@ -34,7 +34,7 @@
     <!-- Menu Button -->
     <div class="menu-bar">
         <div class="menu-button-container">
-            <button class="menu-button"><em class="fas fa-bars"></em></button>
+            <button class="menu-button" ><em class="fas fa-bars"></em></button>
         </div>
     </div>
 
@@ -43,6 +43,19 @@
         <button class="hide-menu-button" onclick="toggleMenu();"><em class="fas fa-times"></em></button>
         <div class="menu-img">
             <div class="menu-img-icon"></div>
+            <div class="dewl-stats">
+                <h5 class="menu-name-label">Dewrler Name</h5>
+
+                <div class="dewl-winrate center">
+                    <div class=winrate-percent style="width: 60%"></div>
+                    <h4>60% hype rating</h4>
+                </div>
+
+                <h5 class="menu-stacks-label"><strong>1000</strong>&nbsp;Stacks</h5>
+                <button class="menu-add-stacks center" data-toggle="modal" data-target="#addStacksModal" onclick="toggleMenu();">
+                    <em class="fas fa-plus"></em>&nbsp;Add stacks
+                </button>
+            </div>
         </div>
         <ul class="menu-list">
             <li class="menu-item profile-item" onclick="showHome();">Dashboard</li>
@@ -50,7 +63,6 @@
             <li class="menu-item request-item" onclick="showRequests();" style="color:#08ADD5;">Witness</li>
             <li class="menu-item request-item" onclick="showCourses();">Create Dewl</li>
             <li class="menu-item request-item" onclick="showCourses();">Deposit Stacks</li>
-            <li class="menu-item request-item" onclick="showCourses();">Friends</li>
         </ul>
 
         <button class="settings">Settings</button>
@@ -247,9 +259,9 @@
                             <tbody>
                             <tr>
                                 <td colspan="4">
-                                    <div class="card-table" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                                    <div class="card-table">
                                         <div class="short-desc">
-                                            <div class="row">
+                                            <div class="row"  data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
                                                 <div class="col-md-3 current-card-column">DATA</div>
                                                 <div class="col-md-3 current-card-column">DATA</div>
                                                 <div class="col-md-6 current-card-column">DATA</div>
@@ -300,7 +312,35 @@
                 </div>
             </div>
         </div>
+
+
+        <!-- MODALS -->
+        <!-- addStacksModal -->
+        <div class="modal fade" id="addStacksModal" tabindex="-1" aria-labelledby="addStacksModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form action="">
+                    <div class="modal-header" style="background-color: #23272b; color:white;">
+                        <h5 class="modal-title" id="addStacksModalLabel">Add Stacks</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <em class="fas fa-times" style="color: white;"></em>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="text-center">Enter Stack Amount</h5>
+                        <p class="text-center" style="font-size: 14px;font-weight: 500;">$1 = 20 Stacks</p>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <input type="button" class="btn btn-success" value="Confirm">
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
+
 </div>
 <!-- JS IMPORT -->
 <script src="resources/js/all.js"></script>

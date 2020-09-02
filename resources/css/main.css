@@ -41,6 +41,77 @@ body{
     box-shadow: 0px 5px 1rem rgba(0,0,0,0.125);
 }
 
+.dewl-stats{
+    position: relative;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.menu-name-label{
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    font-size: 17px;
+    font-weight: 800;
+    text-align: center;
+    padding: 5px;
+}
+
+.dewl-winrate{
+    width: 150px;
+    height: 25px;
+    background-color: #94a0a4;
+    border-radius: 10px;
+    margin: 5px;
+}
+.dewl-winrate h4{
+
+    height: 25px;
+    width: 150px;
+
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    top: -20px;
+
+    text-align: center;
+}
+
+.winrate-percent{
+    background-color: #0d95e8;
+    height: 100%;
+
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.menu-stacks-label{
+    position: relative;
+    width: 100%;
+    padding-top: 5px;
+
+    color: #3b5998;
+
+    font-size: 13px;
+    font-weight: 800;
+    text-align: center;
+    padding: 0;
+}
+
+.menu-add-stacks{
+    border-radius: 5px;
+    border: none;
+    background-color: #9a9b9b;
+
+    width: 100px;
+    height: 30px;
+
+    font-size: 12px;
+}
+
 .menu-button{
     padding: 5px;
     border: none;
@@ -71,7 +142,7 @@ body{
 .menu-img{
     background-color: rgba(0,0,0,0.1);
     width: 100%;
-    height: 200px;
+    height: 230px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,11 +155,12 @@ body{
     background-size: cover;
 
     margin: auto;
-    margin-left: 90px;
-    margin-top: 10px;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
 
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .menu-box{
@@ -331,6 +403,9 @@ body{
 
     margin-top: 40px;
     background: rgba(0,0,0,0);
+
+    border-radius: 10px;
+    box-shadow: 0px 5px 1rem rgba(0,0,0,0.3);
 }
 
 .history{
