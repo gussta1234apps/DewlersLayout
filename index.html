@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dewler | Home</title>
+    <!--CSS IMPORT-->
+    <link rel="stylesheet" href="resources/css/all.css">
+    <link rel="stylesheet" href="resources/css/font-awesome.min.css">
+    <link rel="stylesheet" href="resources/css/main.css">
+    <link rel="stylesheet" href="resources/css/loading.css">
+
+    <!-- BOOTSTRAP CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+<body>
+
+<!-- Container -->
+
+<div class="container-fluid">
+    <div id="load-container">
+        <div class="loading">
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+        </div>
+    </div>
+    <!-- Menu Button -->
+    <div class="menu-bar">
+        <div class="menu-button-container">
+            <button class="menu-button"><em class="fas fa-bars"></em></button>
+        </div>
+    </div>
+
+    <!-- MENU BOX -->
+    <div class="menu-box">
+        <button class="hide-menu-button" onclick="toggleMenu();"><em class="fas fa-times"></em></button>
+        <div class="menu-img">
+            <div class="menu-img-icon"></div>
+        </div>
+        <ul class="menu-list">
+            <li class="menu-item profile-item" onclick="showHome();">Dashboard</li>
+            <li class="menu-item profile-item" onclick="showHistory();" style="color: #CE3250;">Dewling History</li>
+            <li class="menu-item request-item" onclick="showRequests();" style="color:#08ADD5;">Witness</li>
+            <li class="menu-item request-item" onclick="showCourses();">Create Dewl</li>
+            <li class="menu-item request-item" onclick="showCourses();">Deposit Stacks</li>
+            <li class="menu-item request-item" onclick="showCourses();">Friends</li>
+        </ul>
+
+        <button class="settings">Settings</button>
+        <button class="logout">Logout</button>
+    </div>
+
+    <!-- FRIENDS BOX -->
+    <div class="friends-box">
+        <button class="hide-menu-button" onclick="toggleFriendBox();"><em class="fas fa-times"></em></button>
+
+    </div>
+
+    <button class="friends-button" onclick="toggleFriendBox()"><em class="fas fa-user-friends"></em></button>
+    <!-- APP -->
+    <div class="app center" id="history">
+        <!--Dewling History-->
+        <div class="history">
+            <h4>Dewling History</h4>
+
+            <div class="table-dewl">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-win" role="tab" aria-controls="nav-home" aria-selected="true" style="color: #08ADD5">Win</a>
+                        <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-loss" role="tab" aria-controls="nav-profile" aria-selected="false" style="color: #CE3250">Loss</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-win" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="dewl-h">
+                            <table class="table table-bordered table-striped">
+                                <thead style="color: #08ADD5;">
+                                <tr>
+                                    <th>Oponent</th>
+                                    <th>Stacks</th>
+                                    <th>Date</th>
+                                    <th>Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                </tr>
+                                <tr>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                </tr>
+                                <tr>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                </tr>
+                                <tr>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                </tr>
+                                <tr>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                </tr>
+                                <tr>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                </tr>
+                                <tr>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                </tr>
+                                <tr>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                </tr>
+                                <tr>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-loss" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="dewl-h">
+                            <table class="table table-bordered table-striped">
+                                <thead style="color: #CE3250;">
+                                <tr>
+                                    <th>Oponent</th>
+                                    <th>Stacks</th>
+                                    <th>Date</th>
+                                    <th>Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                </tr>
+                                <tr>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                </tr>
+                                <tr>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                </tr>
+                                <tr>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                </tr>
+                                <tr>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                </tr>
+                                <tr>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                </tr>
+                                <tr>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                </tr>
+                                <tr>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                </tr>
+                                <tr>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                    <td>prueba</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="app center" id="home">
+        <h4>Dashboard</h4>
+
+        <div class="table-dewl" >
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab-home" role="tablist">
+                    <a class="nav-link active" id="nav-1-tab" data-toggle="tab" href="#nav-current" role="tab" aria-controls="nav-current" aria-selected="true" style="color: #08ADD5">Witness</a>
+                    <a class="nav-link" id="nav-2-tab" data-toggle="tab" href="#nav-witness" role="tab" aria-controls="nav-witness" aria-selected="false" style="color: #CE3250">Loss</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent2">
+                <div class="tab-pane fade show active" id="nav-current" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="dewl-h">
+                        <table class="table table-borderless">
+                            <thead style="color: #08ADD5;">
+                            <tr>
+                                <th colspan="4 center">Current Dewls</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td colspan="4">
+                                    <div class="card-table" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                                        <div class="short-desc">
+                                            <div class="row">
+                                                <div class="col-md-3 current-card-column">DATA</div>
+                                                <div class="col-md-3 current-card-column">DATA</div>
+                                                <div class="col-md-6 current-card-column">DATA</div>
+                                            </div>
+                                        </div>
+                                        <div class="collapse detail" id="collapseExample1">
+                                            <div class="center">
+                                                Detail data<br>
+                                                Detail data<br>
+                                                Detail data<br>
+                                                Detail data<br>
+                                                Detail data
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="4">
+                                    <div class="card-table">
+                                        <div class="short-desc">
+                                            <div class="row"  data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                                                <div class="col-md-3 current-card-column">DATA</div>
+                                                <div class="col-md-3 current-card-column">DATA</div>
+                                                <div class="col-md-6 current-card-column">DATA</div>
+                                            </div>
+                                        </div>
+                                        <div class="collapse detail" id="collapseExample2">
+                                            <div class="center">
+                                                Detail data<br>
+                                                Detail data<br>
+                                                Detail data<br>
+                                                Detail data<br>
+                                                Detail data
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-witness" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <div class="dewl-h">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- JS IMPORT -->
+<script src="resources/js/all.js"></script>
+<script src="resources/js/jquery.js"></script>
+<script src="resources/js/tilt.jquery.min.js"></script>
+<script src="resources/js/main.js"></script>
+<script src="resources/js/load.js"></script>
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

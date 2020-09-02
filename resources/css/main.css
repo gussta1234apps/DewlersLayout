@@ -1,0 +1,467 @@
+
+
+body{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    background: rgb(196, 196, 196);
+    background-size: cover;
+}
+
+
+.menu-bar{
+    width: 100vw;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0);
+}
+
+.menu-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    position: absolute;
+    padding: 15px;
+    background: white;
+
+    top: 10px;
+
+    width: 65px;
+    height: 60px;
+
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: 0px 5px 1rem rgba(0,0,0,0.125);
+}
+
+.menu-button{
+    padding: 5px;
+    border: none;
+    background: rgba(0,0,0,0);
+    border-radius: 40px;
+
+    font-size: 30px;
+    color: #000000;
+
+    width: 60px;
+    height: 80px;
+
+    transition: all .4s;
+}
+
+.menu-button:hover{
+    background: rgba(0,0,0,0.08);
+}
+
+.menu-button:focus{
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none
+}
+
+.menu-img{
+    background-color: rgba(0,0,0,0.1);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu-img-icon{
+    background: url(../img/DWlogo.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    margin: auto;
+    margin-left: 90px;
+    margin-top: 10px;
+
+    width: 100px;
+    height: 100px;
+}
+
+.menu-box{
+    background-color: white;
+    width:300px;
+    height: 100%;
+
+    position: fixed;
+    z-index: 10000;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    transition: all .4s;
+    box-shadow: -5px 0px 2rem rgba(0,0,0,0.4);
+}
+
+.friends-box{
+    background-color: white;
+    width:300px;
+    height: 100%;
+
+    position: fixed;
+    z-index: 10000;
+
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    transition: all .4s;
+    box-shadow: 5px 0px 2rem rgba(0,0,0,0.4);
+}
+
+.friends-button{
+    position: fixed;
+    background-color: #CE3250;
+
+    color:white;
+
+    width: 50px;
+    height: 50px;
+
+    bottom: 15px;
+    right: 15px;
+
+    border-radius: 25px;
+    border:none;
+
+    font-size: 20px;
+
+    box-shadow: 3px 3px 2px rgba(0,0,0,0.3);
+
+    transition: all .25s;
+}
+
+.friends-button:hover{
+    transform: scale(1.1);
+}
+.friends-button:focus{
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+
+    box-shadow: 3px 3px 2px rgba(0,0,0,0.3);
+}
+
+
+.hide-menu-button{
+    padding: 10px;
+    position: absolute;
+    margin-top: 5px;
+    right: 20px;
+    background-color: rgba(0,0,0,0);
+    color: black;
+    border: none;
+
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.hide-menu-button:focus{
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.dewler-data{
+    margin: auto;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dewler-data h4{
+    color: rgba(0,0,0,0.6);
+
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.dewler-data h5{
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.dewler-data img{
+    width: 100px;
+    height: 100px;
+}
+
+.dewler-icon{
+    background: url(../img/DWlogo.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+
+.dewl-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+
+    width: 90vw;
+    max-width: 350px;
+    height: 90vw;
+    max-height: 350px;
+
+    border-radius: 20px;
+
+    background: #22181C;
+}
+
+.dewl-card h4{
+    color: #CE3250;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.gamer-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+
+    width: 90vw;
+    max-width: 350px;
+    height: 90vw;
+    max-height: 350px;
+
+    border-radius: 20px;
+
+    background: #08ADD5;
+}
+.gamer-card h4{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.menu-list{
+    list-style: none;
+    text-decoration: none;
+
+    margin: 20px;
+}
+
+.menu-item{
+
+    color: #23272b;
+    padding: 5px;
+
+    cursor: pointer;
+    font-family: Poppins-Medium, sans-serif;
+
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.settings{
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    font-weight: 700;
+
+    border: none;
+    background: rgba(0,0,0,0);
+}
+
+.logout{
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    font-weight: 700;
+
+    border: none;
+    background: rgba(0,0,0,0);
+}
+
+.app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    width: 92vw;
+    max-width: 1240px;
+    height: 80vh;
+    max-height: 1100px;
+
+    margin-top: 40px;
+    background: rgba(0,0,0,0);
+}
+
+.history{
+    width: 90vw;
+    max-width: 1200px;
+    height: 85vh;
+    max-height: 1000px;
+
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+}
+
+.history h4{
+    color: #CE3250;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+#home h4{
+    margin-top: 0px;
+    color: #CE3250;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.table-dewl{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 87%;
+    margin-left: 0;
+}
+
+.dewl-h{
+    max-height: 62vh;
+    overflow-y: scroll;
+}
+
+/*SCROLL CONFIG*/
+.dewl-h::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.dewl-h::-webkit-scrollbar-thumb {
+    background: #CE3250;
+    border-radius: 0px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.dewl-h::-webkit-scrollbar-thumb:hover {
+    background: #cf1d3f;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.dewl-h::-webkit-scrollbar-thumb:active {
+    background-color: #ae1a38;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+.dewl-h::-webkit-scrollbar-track {
+    background: #c5c5c5;
+}
+
+
+/* Cambiamos el fondo cuando esté en active o hover */
+.dewl-h::-webkit-scrollbar-track:hover,
+.dewl-h::-webkit-scrollbar-track:active {
+    background: #c4c3c3;
+}
+
+
+.card-table{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+.detail-button{
+
+    border-radius: 30px;
+
+    width: 100px;
+    height: 35px;
+    border: none;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    background-color: #0d95e8;
+    color: white;
+}
+
+.detail-button:focus{
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.current-card-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.detail{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #23272b;
+    border-radius: 10px;
+
+    color: white;
+    margin: 5px;
+}

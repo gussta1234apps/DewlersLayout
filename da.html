@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- Menu Button -->
+<div class="menu-bar">
+    <div class="menu-button-container">
+        <button class="menu-button"><em class="fas fa-bars"></em></button>
+    </div>
+</div>
+
+<!-- MENU BOX -->
+<div class="menu-box">
+    <button class="hide-menu-button" onclick="toggleMenu();"><em class="fas fa-times"></em></button>
+    <div class="menu-img">
+        <div class="menu-img-icon"></div>
+    </div>
+    <ul class="menu-list">
+        <li class="menu-item profile-item" onclick="showProfile();" style="color: #CE3250;">Dewling History</li>
+        <li class="menu-item request-item" onclick="showRequests();" style="color:#08ADD5;">Witness</li>
+        <li class="menu-item request-item" onclick="showCourses();">Create Dewl</li>
+        <li class="menu-item request-item" onclick="showCourses();">Deposit Stacks</li>
+        <li class="menu-item request-item" onclick="showCourses();">Friends</li>
+    </ul>
+
+    <button class="settings">Settings</button>
+    <button class="logout">Logout</button>
+</div>
+
+<!-- APP -->
+<div class="app center">
+    <!--Dewling History-->
+    <div class="history">
+        <h4>Dewling History</h4>
+
+        <div class="table-dewl">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                    <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                    <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
