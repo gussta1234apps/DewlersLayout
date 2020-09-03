@@ -7,8 +7,7 @@ body{
     justify-content: center;
     flex-direction: column;
     overflow-x: hidden;
-    background: rgb(196, 196, 196);
-    background-size: cover;
+    background-color: rgb(0, 0, 0);
 }
 
 
@@ -401,11 +400,11 @@ body{
     height: 80vh;
     max-height: 1100px;
 
-    margin-top: 40px;
-    background: rgba(0,0,0,0);
+    margin-top: 55px;
+    background: white;
 
     border-radius: 10px;
-    box-shadow: 0px 5px 1rem rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 3rem rgba(0,0,0,0.35);
 }
 
 .history{
@@ -425,7 +424,7 @@ body{
     font-size: 20px;
     font-weight: 700;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 #home h4{
     margin-top: 0px;
@@ -508,7 +507,7 @@ body{
     color: white;
 }
 
-.detail-button:focus{
+.detail-button:focus,.create-dewl-button{
     outline:none !important;
     outline-width: 0 !important;
     box-shadow: none;
@@ -516,13 +515,12 @@ body{
     -webkit-box-shadow: none;
 }
 
-.current-card-column{
+.current-card-column,.friends-col,.friends-count-card, .friends-request-count-card{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
 }
 .detail{
     align-items: center;
@@ -532,11 +530,161 @@ body{
 
 
     position: relative;
-    width: 100%;
+    width: 99%;
     height: auto;
     background-color: #23272b;
     border-radius: 10px;
 
     color: white;
     margin: 5px;
+}
+.detail-data{
+    padding:15px;
+}
+
+.top-transaction-icon{
+    position: absolute;
+
+    top: 5px;
+    right: 5px;
+}
+
+/*FREINDS MENU ITEMS*/
+.friends-top{
+    background-color: #3b5998;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dewler-search-label{
+    color:white;
+    font-size: 20px;
+}
+.dewler-search{
+    padding: 10px;
+}
+
+.hide-friends-button{
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    border: none;
+
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.dewler-search-input{
+    background-color: white;
+    color: #4e555b;
+
+    width: 200px;
+    border-radius: 10px;
+
+    border: none;
+    padding: 5px;
+}
+
+.dewler-search-button{
+    background-color: rgba(0,0,0,0);
+    color: white;
+    border: none;
+}
+
+.dewler-search-button,.dewler-search-input,.hide-friends-button,.create-dewl-button-desktop,.create-dewl-button-mobile:focus{
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none
+}
+
+.friends-count-card{
+    width: 115px;
+    height: 40px;
+    background-color: #0d95e8;
+    border-radius: 15px;
+}
+
+.friends-count-card p{
+    margin: auto;
+    color:white;
+    font-size: 13px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+
+.friends-request-count-card p{
+    margin: auto;
+    color:white;
+    font-size: 13px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+
+.friends-request-count-card{
+    width: 115px;
+    height: 40px;
+    background-color: #0d95e8;
+    border-radius: 15px;
+}
+
+.friends-results{
+    width: 100%;
+    height: 50vh;
+    padding: 10px;
+    /*background-color: #4e555b;*/
+}
+
+.create-dewl-button-mobile{
+    border-radius: 10px;
+    border:none;
+    padding: 10px;
+    background-color: rgba(0,0,0,0);
+
+    width: 200px;
+}
+
+.create-dewl-button-desktop{
+    position: absolute;
+    border: none;
+    background-color: #c8c8c8;
+
+    top: 65px;
+
+    padding: 8px;
+    margin-left: 10px;
+    border-radius: 10px;
+    height: 40px;
+}
+
+
+
+.create-dewl-mobile{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    width: 200px;
+    height: 45px;
+
+    background-color: white;
+
+    margin: auto;
+
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    top: 0;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }

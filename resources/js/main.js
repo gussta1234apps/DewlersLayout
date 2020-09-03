@@ -2,6 +2,12 @@ var showMenuBox = true;
 var showFriendsBox = false;
 
 $(document).ready(function(){
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        $('.create-dewl-button-desktop').hide();
+    }else{
+        $('.create-dewl-mobile').hide();
+    }
+
     showHome()
 
     $('.menu-box').css('left','-350px');

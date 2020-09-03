@@ -18,7 +18,7 @@
 
 <!-- Container -->
 
-<div class="container-fluid">
+<div class="container-fluid" >
     <div id="load-container">
         <div class="loading">
             <div class="obj"></div>
@@ -35,6 +35,10 @@
     <div class="menu-bar">
         <div class="menu-button-container">
             <button class="menu-button" ><em class="fas fa-bars"></em></button>
+        </div>
+        <div class="create-dewl-mobile">
+            <button class="create-dewl-button-mobile"><div class="circle-plus"><em class="fas fa-plus"></em>&nbsp;Create Dewl</div></button>
+
         </div>
     </div>
 
@@ -60,9 +64,9 @@
         <ul class="menu-list">
             <li class="menu-item profile-item" onclick="showHome();">Dashboard</li>
             <li class="menu-item profile-item" onclick="showHistory();" style="color: #CE3250;">Dewling History</li>
-            <li class="menu-item request-item" onclick="showRequests();" style="color:#08ADD5;">Witness</li>
-            <li class="menu-item request-item" onclick="showCourses();">Create Dewl</li>
-            <li class="menu-item request-item" onclick="showCourses();">Deposit Stacks</li>
+            <!--li class="menu-item request-item" onclick="showRequests();" style="color:#08ADD5;">Witness</li-->
+            <!--li class="menu-item request-item" onclick="showCourses();">Create Dewl</li-->
+            <!--li class="menu-item request-item" onclick="showCourses();">Deposit Stacks</li-->
         </ul>
 
         <button class="settings">Settings</button>
@@ -71,15 +75,43 @@
 
     <!-- FRIENDS BOX -->
     <div class="friends-box">
-        <button class="hide-menu-button" onclick="toggleFriendBox();"><em class="fas fa-times"></em></button>
+        <button class="hide-friends-button" onclick="toggleFriendBox();"><em class="fas fa-times"></em></button>
 
+        <div class="friends-top">
+            <h4 class="dewler-search-label">Dewrler Seacrh</h4>
+            <div class="dewler-search">
+
+                <input type="text" class="dewler-search-input">
+                <button class="dewler-search-button"><em class="fas fa-search"></em></button>
+            </div>
+        </div>
+        <div class="friends-results">
+            <div class="row" style="margin-left:0;">
+                <div class="col">
+                    <div class="friends-count-card">
+                        <p class="center">120 Friends</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="friends-request-count-card">
+                        <p class="center">10 Requests</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="friends-request"></div>
     </div>
 
     <button class="friends-button" onclick="toggleFriendBox()"><em class="fas fa-user-friends"></em></button>
+
+
     <!-- APP -->
     <div class="app center" id="history">
+
         <!--Dewling History-->
+
         <div class="history">
+            <button class="create-dewl-button-desktop"><em class="fas fa-plus"></em>&nbsp;Create Dewl</button>
             <h4>Dewling History</h4>
 
             <div class="table-dewl">
@@ -238,76 +270,137 @@
 
 
     <div class="app center" id="home">
-        <h4>Dashboard</h4>
+        <div class="history">
+            <button class="create-dewl-button-desktop"><em class="fas fa-plus"></em>&nbsp;Create Dewl</button>
+            <h4 style="margin-top: 40px">Dashboard</h4>
 
-        <div class="table-dewl" >
-            <nav>
-                <div class="nav nav-tabs" id="nav-tab-home" role="tablist">
-                    <a class="nav-link active" id="nav-1-tab" data-toggle="tab" href="#nav-current" role="tab" aria-controls="nav-current" aria-selected="true" style="color: #08ADD5">Witness</a>
-                    <a class="nav-link" id="nav-2-tab" data-toggle="tab" href="#nav-witness" role="tab" aria-controls="nav-witness" aria-selected="false" style="color: #CE3250">Loss</a>
-                </div>
-            </nav>
-            <div class="tab-content" id="nav-tabContent2">
-                <div class="tab-pane fade show active" id="nav-current" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <div class="dewl-h">
-                        <table class="table table-borderless">
-                            <thead style="color: #08ADD5;">
-                            <tr>
-                                <th colspan="4 center">Current Dewls</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td colspan="4">
-                                    <div class="card-table">
-                                        <div class="short-desc">
-                                            <div class="row"  data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
-                                                <div class="col-md-3 current-card-column">DATA</div>
-                                                <div class="col-md-3 current-card-column">DATA</div>
-                                                <div class="col-md-6 current-card-column">DATA</div>
-                                            </div>
-                                        </div>
-                                        <div class="collapse detail" id="collapseExample1">
-                                            <div class="center">
-                                                Detail data<br>
-                                                Detail data<br>
-                                                Detail data<br>
-                                                Detail data<br>
-                                                Detail data
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td colspan="4">
-                                    <div class="card-table">
-                                        <div class="short-desc">
-                                            <div class="row"  data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
-                                                <div class="col-md-3 current-card-column">DATA</div>
-                                                <div class="col-md-3 current-card-column">DATA</div>
-                                                <div class="col-md-6 current-card-column">DATA</div>
-                                            </div>
-                                        </div>
-                                        <div class="collapse detail" id="collapseExample2">
-                                            <div class="center">
-                                                Detail data<br>
-                                                Detail data<br>
-                                                Detail data<br>
-                                                Detail data<br>
-                                                Detail data
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
+            <div class="table-dewl" >
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab-home" role="tablist">
+                        <a class="nav-link active" id="nav-1-tab" data-toggle="tab" href="#nav-current" role="tab" aria-controls="nav-current" aria-selected="true" style="color: #08ADD5">Current</a>
+                        <a class="nav-link" id="nav-2-tab" data-toggle="tab" href="#nav-transaction" role="tab" aria-controls="nav-transaction" aria-selected="false" style="color: #CE3250">Transactions</a>
+                        <a class="nav-link" id="nav-3-tab" data-toggle="tab" href="#nav-witness" role="tab" aria-controls="nav-witness" aria-selected="false" style="color: #1c1a1a">Witness</a>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="nav-witness" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    <div class="dewl-h">
+                </nav>
+                <div class="tab-content" id="nav-tabContent2">
+                    <div class="tab-pane fade show active" id="nav-current" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="dewl-h">
+                            <table class="table table-borderless">
+                                <thead style="color: #08ADD5;">
+                                <tr>
+                                    <th colspan="4 center">Current Dewls</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td colspan="4">
+                                        <div class="card-table">
+                                            <div class="short-desc">
+                                                <div class="row"  data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                                                    <div class="col-md-3 current-card-column">DATA</div>
+                                                    <div class="col-md-3 current-card-column">DATA</div>
+                                                    <div class="col-md-6 current-card-column">DATA</div>
+                                                </div>
+                                            </div>
+                                            <div class="collapse detail" id="collapseExample1">
+                                                <div class="center">
+                                                    Detail data<br>
+                                                    Detail data<br>
+                                                    Detail data<br>
+                                                    Detail data<br>
+                                                    Detail data
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="4">
+                                        <div class="card-table">
+                                            <div class="short-desc">
+                                                <div class="row"  data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                                                    <div class="col-md-3 current-card-column">DATA</div>
+                                                    <div class="col-md-3 current-card-column">DATA</div>
+                                                    <div class="col-md-6 current-card-column">DATA</div>
+                                                </div>
+                                            </div>
+                                            <div class="collapse detail" id="collapseExample2">
+                                                <div class="center">
+                                                    Detail data<br>
+                                                    Detail data<br>
+                                                    Detail data<br>
+                                                    Detail data<br>
+                                                    Detail data
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-transaction" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="dewl-h">
+                            <table class="table table-borderless">
+                                <thead style="color: #08ADD5;">
+                                <tr>
+                                    <th colspan="4 center">Transaction History</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td colspan="4">
+                                        <div class="card-table">
+                                            <em class="top-transaction-icon fas fa-credit-card"></em>
+                                            <div class="short-desc">
+                                                <div class="row"  data-toggle="collapse" href="#transaction-row1" role="button" aria-expanded="false" aria-controls="transaction-row1">
+                                                    <div class="col-md-4 current-card-column"><strong>20 August 2020</strong></div>
+                                                    <div class="col-md-4 current-card-column">Stack purchase</div>
+                                                    <div class="col-md-4 current-card-column"><strong>+200 Stacks</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="collapse detail" id="transaction-row1">
+                                                <div class="detail-data">
+                                                    Deposit Stacks <strong>200</strong>
+                                                    <br>
+                                                    Paid: <strong>$10</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="4">
+                                        <div class="card-table">
+                                            <div class="short-desc">
+
+                                                <em class="top-transaction-icon fas fa-gamepad"></em>
+                                                <div class="row"  data-toggle="collapse" href="#transaction-row2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                                                    <div class="col-md-4 current-card-column"><strong>21 August 2020</strong></div>
+                                                    <div class="col-md-4 current-card-column">Dewl Victory</div>
+                                                    <div class="col-md-4 current-card-column"><strong>+40 Stacks</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="collapse detail" id="transaction-row2">
+                                                <div class="detail-data">
+                                                    Stacks earned: <strong>40</strong>
+                                                    <br>
+                                                    You won vs: <strong>ArielZelaya123</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-witness" role="tabpanel" aria-labelledby="nav-witness-tab">
+                        <div class="dewl-h">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -330,6 +423,31 @@
                         <h5 class="text-center">Enter Stack Amount</h5>
                         <p class="text-center" style="font-size: 14px;font-weight: 500;">$1 = 20 Stacks</p>
                         <input type="text" class="form-control">
+                        <br>
+                        <h6 class="text-center">Quick add</h6>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <button class="form-control btn btn-primary" style="margin-bottom: 5px">$10</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="form-control btn btn-primary" style="margin-bottom: 5px">$20</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="form-control btn btn-primary" style="margin-bottom: 5px">$25</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <button class="form-control btn btn-primary" style="margin-bottom: 5px">$30</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="form-control btn btn-primary" style="margin-bottom: 5px">$50</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="form-control btn btn-primary" style="margin-bottom: 5px">$100</button>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
