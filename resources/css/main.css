@@ -687,4 +687,15 @@ body{
 
     top: 0;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    display:none !important;
 }
+/* Media query for mobile devices */
+@media only screen and (max-width: 375px) {
+    .create-dewl-button-desktop{
+        display: none !important;
+    }
+    .create-dewl-mobile{
+        display: block !important;
+    }
+
+  }
