@@ -2,11 +2,11 @@ var showMenuBox = true;
 var showFriendsBox = false;
 
 $(document).ready(function(){
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+   /*  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         $('.create-dewl-button-desktop').hide();
     }else{
         $('.create-dewl-mobile').hide();
-    }
+    } */
 
     showHome()
 
