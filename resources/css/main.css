@@ -425,19 +425,24 @@ body{
     bottom: 0;
 }
 
-.history h4{
+/*.history h4{
     color: #CE3250;
     font-size: 20px;
     font-weight: 700;
     text-align: center;
     margin-top: 50px;
-}
+}*/
+/*
 #home h4{
     margin-top: 0px;
     color: #CE3250;
     font-size: 20px;
     font-weight: 700;
     text-align: center;
+}*/
+.app-dewler-data{
+    margin: 10px;
+    padding-top: 20px;
 }
 .table-dewl{
     padding-left: 20px;
