@@ -38,6 +38,19 @@ $(document).ready(function(){
         $('.request-body').hide(0);
         $('.friends-body').show(0);
     });
+
+    $('.friends-dewl-button').click(function(){
+        $('#createDewlModalButton').click();
+        toggleFriendBox();
+    });
+
+    $('.create-dewl-button-desktop').click(function(){
+        $('#createDewlModalButton').click();
+    });
+
+    $('.create-dewl-button-mobile').click(function(){
+        $('#createDewlModalButton').click();
+    });
 });
 
 let showHome=()=>{
