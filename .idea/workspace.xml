@@ -35,7 +35,10 @@
       <workItem from="1599060170198" duration="7996000" />
       <workItem from="1599075994217" duration="9356000" />
       <workItem from="1599108883256" duration="54000" />
-      <workItem from="1599142056891" duration="8114000" />
+      <workItem from="1599142056891" duration="9104000" />
+      <workItem from="1599165798678" duration="5938000" />
+      <workItem from="1599231999386" duration="9268000" />
+      <workItem from="1599248940633" duration="6966000" />
     </task>
     <servers />
   </component>
@@ -47,9 +50,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="76" width="585" height="888" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599158053332" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1599086618965">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="733" y="421" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1599165371666">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="733" y="421" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599165371666" />
+    <state x="476" y="231" key="run.anything.popup" timestamp="1599250317673">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1599086618965" />
+    <state x="476" y="231" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599250317673" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599251301821">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599251301821" />
   </component>
 </project>

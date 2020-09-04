@@ -8,6 +8,7 @@ $(document).ready(function(){
         $('.create-dewl-mobile').hide();
     } */
 
+    $('.request-body').slideUp();
     showHome()
 
     $('.menu-box').css('left','-350px');
@@ -17,7 +18,26 @@ $(document).ready(function(){
         toggleMenu()
     });
 
+    $('.dewler-search-input').keyup(function(){
+        if($('.dewler-search-input').val().length>0){
+            $('.friends-request').slideUp(300);
+            $('.friends-results').addClass("full-table");
+        }else{
+            $('.friends-request').slideDown(300);
+            $('.friends-results').removeClass("full-table");
 
+        }
+    });
+
+    $('.friends-request-notification').click(function(){
+        $('.friends-body').hide(0);
+        $('.request-body').show(300);
+    });
+
+    $('.return-to-friends-body').click(function(){
+        $('.request-body').hide(0);
+        $('.friends-body').show(0);
+    });
 });
 
 let showHome=()=>{
