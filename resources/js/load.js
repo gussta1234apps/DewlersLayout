@@ -6,3 +6,4 @@ window.onload = function(){
         contenedor.style.opacity = '0';
     },500)
 };
+

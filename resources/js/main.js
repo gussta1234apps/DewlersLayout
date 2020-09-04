@@ -8,6 +8,7 @@ $(document).ready(function(){
         $('.create-dewl-mobile').hide();
     } */
 
+    $('.request-body').slideUp();
     showHome()
 
 
@@ -19,6 +20,13 @@ $(document).ready(function(){
         toggleMenu()
     });
 
+    $('.dewler-search-input').keyup(function(){
+        if($('.dewler-search-input').val().length>0){
+            $('.friends-request').slideUp(300);
+            $('.friends-results').addClass("full-table");
+        }else{
+            $('.friends-request').slideDown(300);
+            $('.friends-results').removeClass("full-table");
     $('.witness-player-selector .btn').click(function(){
         togglewinnerChooser();
     });
@@ -26,7 +34,31 @@ $(document).ready(function(){
         togglewinnerChooser();
     });
 
+        }
+    });
 
+    $('.friends-request-notification').click(function(){
+        $('.friends-body').hide(0);
+        $('.request-body').show(300);
+    });
+
+    $('.return-to-friends-body').click(function(){
+        $('.request-body').hide(0);
+        $('.friends-body').show(0);
+    });
+
+    $('.friends-dewl-button').click(function(){
+        $('#createDewlModalButton').click();
+        toggleFriendBox();
+    });
+
+    $('.create-dewl-button-desktop').click(function(){
+        $('#createDewlModalButton').click();
+    });
+
+    $('.create-dewl-button-mobile').click(function(){
+        $('#createDewlModalButton').click();
+    });
 });
 
 let showHome=()=>{

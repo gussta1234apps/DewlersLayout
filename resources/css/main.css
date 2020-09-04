@@ -179,7 +179,7 @@ body{
 }
 
 .friends-box{
-    background-color: white;
+    background-color: #f5f5f5;
     width:300px;
     height: 100%;
 
@@ -444,6 +444,7 @@ body{
     padding-right: 20px;
     padding-bottom: 20px;
     width: 100%;
+    max-height: 100%;
     height: 87%;
     margin-left: 0;
     max-height: 100%;
@@ -453,6 +454,8 @@ body{
     max-height: 62vh;
     overflow-y: scroll;
 }
+
+
 
 /*SCROLL CONFIG*/
 .dewl-h::-webkit-scrollbar {
@@ -481,12 +484,75 @@ body{
     background: #c5c5c5;
 }
 
+/*SCROLL CONFIG*/
+.friends-body::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.friends-body::-webkit-scrollbar-thumb {
+    background: #CE3250;
+    border-radius: 0px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.friends-body::-webkit-scrollbar-thumb:hover {
+    background: #cf1d3f;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.friends-body::-webkit-scrollbar-thumb:active {
+    background-color: #ae1a38;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+.friends-body::-webkit-scrollbar-track {
+    background: #c5c5c5;
+}
+
 
 /* Cambiamos el fondo cuando esté en active o hover */
-.dewl-h::-webkit-scrollbar-track:hover,
-.dewl-h::-webkit-scrollbar-track:active {
+.friends-results::-webkit-scrollbar-track:hover,
+.friends-results::-webkit-scrollbar-track:active {
     background: #c4c3c3;
 }
+
+/********** REQUETS BODY SCROLL ********/
+/*SCROLL CONFIG*/
+.request-body::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.request-body::-webkit-scrollbar-thumb {
+    background: #CE3250;
+    border-radius: 0px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.request-body::-webkit-scrollbar-thumb:hover {
+    background: #cf1d3f;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.request-body::-webkit-scrollbar-thumb:active {
+    background-color: #ae1a38;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+.request-body::-webkit-scrollbar-track {
+    background: #c5c5c5;
+}
+
+
+/* Cambiamos el fondo cuando esté en active o hover */
+.request-body::-webkit-scrollbar-track:hover,
+.request-body::-webkit-scrollbar-track:active {
+    background: #c4c3c3;
+}
+
 
 
 .card-table{
@@ -522,7 +588,8 @@ body{
     -webkit-box-shadow: none;
 }
 
-.current-card-column,.friends-col,.friends-count-card, .friends-request-count-card{
+.current-card-column,.friends-col,.friends-count-card, .friends-request-count-card,.friend-request-card,.header-search,.request-notification-circle,
+.friends-load{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -576,18 +643,6 @@ body{
     padding: 10px;
 }
 
-.hide-friends-button{
-    padding: 10px;
-    position: absolute;
-    top: 0px;
-    right: 10px;
-    background-color: rgba(0,0,0,0);
-    color: white;
-    border: none;
-
-    cursor: pointer;
-    font-size: 20px;
-}
 
 .dewler-search-input{
     background-color: white;
@@ -646,11 +701,22 @@ body{
     border-radius: 15px;
 }
 
-.friends-results{
-    width: 100%;
-    height: 50vh;
+.friends-request{
+    width: 300px;
+    height: 41vh;
+    max-height: 41vh;
     padding: 10px;
     /*background-color: #4e555b;*/
+}
+
+.friends-results{
+    width: 300px;
+    height: 45vh;
+    max-height: 45vh;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /*background-color: #3b5998;*/
 }
 
 .create-dewl-button-mobile{
@@ -697,6 +763,292 @@ body{
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
     display:none !important;
 }
+
+.friend-request-card{
+    width: 280px;
+    height: auto;
+
+    /*padding: 5px;
+    border-radius: 5px;
+    border: solid 1px rgb(38, 46, 64);
+
+    background-color: #f8f8f8;*/
+}
+
+.friend-request-card-button{
+    width: 80px;
+    font-size: 10px;
+}
+
+.card{
+    padding: 0px !important;
+    margin: 10px !important;
+    background-color: #1c2b3b !important;
+    border-radius: 10px !important;
+    border: none;
+    color: white;
+}
+.card button{
+    font-size: 12px;
+}
+
+.full-table{
+    height: 84vh;
+    max-height: 84vh;
+
+}
+
+
+/* FRIENDS BAR NEW STYLE*/
+
+.header-search{
+    position: absolute;
+    height: 80px;
+    background-color: white;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.hide-friends-button{
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+
+    background-color: rgba(0,0,0,0);
+    color: #b0b0b0;
+
+    border: none;
+
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 110;
+}
+
+.dewler-search-input{
+    position: absolute;
+    z-index: 10;
+
+    background-color: white;
+    border-radius: 0px;
+    border: none;
+
+    color: #4d5154;
+    text-align: center;
+
+    width: 250px;
+    padding: 5px;
+
+    border-bottom: solid 1px #b0b0b0;
+
+    bottom: 15px;
+    margin-left: auto;
+}
+
+.friends-body{
+    margin-top: 80px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 300px;
+    height: calc(100vh - 80px);
+    max-height: calc(100vh - 80px);
+    box-sizing: border-box;
+
+    transition: all .6s;
+}
+
+.request-body{
+    margin-top: 80px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 300px;
+    height: calc(100vh - 80px);
+    max-height: calc(100vh - 80px);
+    box-sizing: border-box;
+}
+
+/* REQUEST NOTIFICATION STYLE*/
+.friends-request-notification{
+    margin: 10px;
+    width: 275px;
+    height: 50px;
+
+    border: solid 1px #CE3250;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.friends-request-notification:hover{
+    box-shadow: 0px 0px 4px #CE3250;
+}
+
+.request-notification-circle{
+    width: 30px;
+    height: 30px;
+
+    position: relative;
+    margin-top: 10px;
+    margin-left: 5px;
+
+    border-radius: 15px;
+    background-color: #CE3250;
+}
+.request-notification-circle p{
+    margin: auto;
+
+    color: white;
+    font-weight: 600;
+}
+.request-notification-title{
+    position: relative;
+    width: 150px;
+    margin-left: 45px;
+    margin-top: -25px;
+
+    font-size: 14px;
+    font-weight: 500;
+ }
+
+/* FRIENDS CARD STYLE*/
+.friends-info-card{
+    margin: 10px;
+    width: 275px;
+    height: 50px;
+
+    border: solid 1px #a0a0a0;
+    border-radius: 5px;
+    background-color: white;
+
+    transition: all .2s;
+}
+.friends-dewl-button{
+    position: relative;
+    margin-top: 10px;
+
+    margin-left: 125px;
+    width: 70px;
+    height: 30px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #0d95e8;
+    color: white;
+
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+.friends-accept-button{
+    position: relative;
+    margin-top: 10px;
+
+    margin-left: 135px;
+    width: 60px;
+    height: 30px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #08a762;
+    color: white;
+
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+.friends-remove-button{
+    position: relative;
+    margin-top: 10px;
+
+    margin-left: 5px;
+    width: 60px;
+    height: 30px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #CE3250;
+    color: white;
+
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.friends-body hr{
+    width: 280px;
+    margin-left: 10px;
+}
+.friends-body h5{
+    margin: 10px;
+    margin-top: 20px;
+
+    width: 280px;
+    height: 30px;
+
+    color: #4e555b;
+    font-size: 15px;
+}
+
+.request-body h5{
+    margin: 10px;
+    margin-top: 20px;
+
+    width: 280px;
+    height: 30px;
+
+    color: #4e555b;
+    font-size: 15px;
+
+}
+
+.friends-info-name{
+    position: relative;
+    margin-right: 5px;
+    margin-top:-25px;
+    width: 110px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    color: #4e555b;
+    text-align: center;
+
+}
+
+.return-to-friends-body{
+    margin-top: 10px;
+    margin-left: 8px;
+    padding: 5px;
+    background: rgba(0,0,0,0);
+    border:none;
+}
+
+
+.friends-load{
+    position: absolute;
+    height: 100vh;
+    background-color: #4e555b;
+    z-index: 0;
+
+}
+.friends-load-img{
+    position: relative;
+    background: url("../img/DWlogo.png");
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+}
+
+
+
 /*Witness tabs*/
 .notification-icon{
     color: #fd7e14;
@@ -769,3 +1121,52 @@ border-color: #CE3250 !important;
     }
 
   }
+
+
+
+@media only screen and (max-width: 850px) {
+    .friends-request{
+        width: 300px;
+        height: 35vh;
+        max-height: 35vh;
+        padding: 10px;
+        /*background-color: #4e555b;*/
+    }
+
+    .friends-results{
+        width: 300px;
+        height: 45vh;
+        max-height: 45vh;
+        padding: 10px;
+       /* background-color: #3b5998;*/
+    }
+
+    .full-table{
+        height: 84vh !important;
+        max-height: 84vh !important;
+    }
+
+    .friends-body{
+        margin-top: 80px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: 300px;
+        height: calc(100vh - 140px);
+        max-height: calc(100vh - 140px);
+        box-sizing: border-box;
+
+        transition: all .6s;
+    }
+
+    .request-body{
+        margin-top: 80px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: 300px;
+        height: calc(100vh - 140px);
+        max-height: calc(100vh - 140px);
+        box-sizing: border-box;
+    }
+}
+
+/* ANIMATIONS */
