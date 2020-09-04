@@ -929,8 +929,8 @@ body{
     position: relative;
     margin-top: 10px;
 
-    margin-left: 125px;
-    width: 70px;
+    margin-left: 120px;
+    width: 75px;
     height: 30px;
 
     border: none;
@@ -939,7 +939,7 @@ body{
     background-color: #0d95e8;
     color: white;
 
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400;
 
 }
@@ -1061,6 +1061,7 @@ body{
     padding-top: 30px ;
     padding-bottom: 30px;
 }
+
 .player-1{
     color: #ffffff !important;
     border-color: #CE3250 !important;
@@ -1084,7 +1085,7 @@ border-color: #CE3250 !important;
 .r-u-sure{
     background-color: #fff;
     border-radius: 10px;
-    padding: 10px 0px 30px 0px ;
+    padding: px 0px 0px 0px ;
     
 }
 .r-u-sure .btn{
@@ -1092,9 +1093,9 @@ border-color: #CE3250 !important;
     margin-right: 20px;
 }
 .r-u-sure h4{
-   margin-bottom: 28px;
+   margin-bottom: 8px;
 }
-.choose-winner  h5{
+.choose-winner  h4{
     color: black;
     
 }

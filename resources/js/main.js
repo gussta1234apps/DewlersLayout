@@ -20,6 +20,13 @@ $(document).ready(function(){
         toggleMenu()
     });
 
+    $('.witness-player-selector .btn').click(function(){
+        togglewinnerChooser();
+    });
+    $('.r-u-sure .btn').click(function(){
+        togglewinnerChooser();
+    });
+    
     $('.dewler-search-input').keyup(function(){
         if($('.dewler-search-input').val().length>0){
             $('.friends-request').slideUp(300);
@@ -27,12 +34,7 @@ $(document).ready(function(){
         }else{
             $('.friends-request').slideDown(300);
             $('.friends-results').removeClass("full-table");
-    $('.witness-player-selector .btn').click(function(){
-        togglewinnerChooser();
-    });
-    $('.r-u-sure .btn').click(function(){
-        togglewinnerChooser();
-    });
+  
 
         }
     });
