@@ -257,6 +257,12 @@ body{
     margin-right: auto;
     width: 50%;
 }
+.center-mobil {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
 .dewler-data{
     margin: auto;
@@ -440,6 +446,7 @@ body{
     width: 100%;
     height: 87%;
     margin-left: 0;
+    max-height: 100%;
 }
 
 .dewl-h{
@@ -532,8 +539,9 @@ body{
     position: relative;
     width: 99%;
     height: auto;
-    background-color: #23272b;
-    border-radius: 10px;
+    background-color: #ffffff;
+    /* border-radius: 10px; */
+    border-top: 1px solid #929191;
 
     color: white;
     margin: 5px;
@@ -689,8 +697,70 @@ body{
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
     display:none !important;
 }
+/*Witness tabs*/
+.notification-icon{
+    color: #fd7e14;
+}
+.witness-player-selector{
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+}
+.chwin-content{
+    padding-top: 30px ;
+    padding-bottom: 30px;
+}
+.player-1{
+    color: #ffffff !important;
+    border-color: #CE3250 !important;
+    background-color: #CE3250 !important;
+}
+.player-1:hover{
+    color: #CE3250 !important;
+background-color: #fff !important;
+border-color: #CE3250 !important;
+}
+.player-2{
+    color: #fff !important;
+    border-color: #0d95e8 !important;
+    background-color: #0d95e8 !important;
+}
+.player-2:hover{
+    color: #0d95e8 !important;
+    background-color: #fff !important;
+    border-color: #0d95e8 !important;
+}
+.r-u-sure{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 0px 30px 0px ;
+    
+}
+.r-u-sure .btn{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.r-u-sure h4{
+   margin-bottom: 28px;
+}
+.choose-winner  h5{
+    color: black;
+    
+}
 /* Media query for mobile devices */
 @media only screen and (max-width: 375px) {
+    /*Witness tab*/
+    .choose-winner  h5{
+        margin-bottom: 20px;
+    }
+    .choose-winner  h4{
+        margin-bottom: 20px;
+    }
+    .center-mobil {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
     .create-dewl-button-desktop{
         display: none !important;
     }

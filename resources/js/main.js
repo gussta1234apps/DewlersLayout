@@ -10,11 +10,20 @@ $(document).ready(function(){
 
     showHome()
 
+
     $('.menu-box').css('left','-350px');
     $('.friends-box').css('right','-350px');
+    $('.r-u-sure').hide();
 
     $('.menu-button').click(function(){
         toggleMenu()
+    });
+
+    $('.witness-player-selector .btn').click(function(){
+        togglewinnerChooser();
+    });
+    $('.r-u-sure .btn').click(function(){
+        togglewinnerChooser();
     });
 
 
@@ -56,4 +65,10 @@ let toggleFriendBox=()=>{
         $('.friends-box').css('right','0px');
         showFriendsBox = true;
     }
+}
+
+let togglewinnerChooser=()=>{
+    $('.choose-winner').toggle();
+    $('.r-u-sure').toggle();
+
 }
