@@ -27,8 +27,6 @@ $(document).ready(function(){
         togglewinnerChooser();
     });
     
-    
-   
     $('.dewler-search-input').keyup(function(){
         if($('.dewler-search-input').val().length>0){
             $('.friends-request').slideUp(300);
