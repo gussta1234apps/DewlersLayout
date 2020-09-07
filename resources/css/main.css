@@ -58,12 +58,25 @@ body{
     padding: 5px;
 }
 
+.app-dewler-data .menu-name-label{
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    font-size: 17px;
+    font-weight: 800;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+}
 .dewl-winrate{
     width: 150px;
     height: 25px;
     background-color: #94a0a4;
     border-radius: 10px;
     margin: 5px;
+    max-width: 150px;
 }
 .dewl-winrate h4{
 
@@ -620,6 +633,7 @@ body{
 }
 .detail-data{
     padding:15px;
+    color: black;
 }
 
 .top-transaction-icon{
@@ -737,6 +751,7 @@ body{
     position: absolute;
     border: none;
     background-color: #c8c8c8;
+    z-index: 1000;
 
     top: 65px;
 
@@ -1093,6 +1108,9 @@ border-color: #CE3250 !important;
     padding: px 0px 0px 0px ;
     
 }
+.txt-blck{
+    color: black;
+}
 .r-u-sure .btn{
     margin-left: 20px;
     margin-right: 20px;
@@ -1106,6 +1124,10 @@ border-color: #CE3250 !important;
 }
 /* Media query for mobile devices */
 @media only screen and (max-width: 375px) {
+    .nav-link{
+        padding-left: 11px !important;
+        padding-right: 11px !important;
+    }
     /*Witness tab*/
     .choose-winner  h5{
         margin-bottom: 20px;
