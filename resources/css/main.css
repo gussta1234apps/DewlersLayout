@@ -58,12 +58,25 @@ body{
     padding: 5px;
 }
 
+.app-dewler-data .menu-name-label{
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    font-size: 17px;
+    font-weight: 800;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+}
 .dewl-winrate{
     width: 150px;
     height: 25px;
     background-color: #94a0a4;
     border-radius: 10px;
     margin: 5px;
+    max-width: 150px;
 }
 .dewl-winrate h4{
 
@@ -214,6 +227,7 @@ body{
     box-shadow: 3px 3px 2px rgba(0,0,0,0.3);
 
     transition: all .25s;
+    z-index: 100;
 }
 
 .friends-button:hover{
@@ -252,6 +266,12 @@ body{
 }
 
 .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.center-mobil {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -395,23 +415,23 @@ body{
     flex-direction: column;
     align-items: center;
 
-    width: 92vw;
-    max-width: 1240px;
-    height: 80vh;
+    width: 98vw;
+    max-width: 1440px;
+    height: 84vh;
     max-height: 1100px;
 
     margin-top: 55px;
     background: white;
 
     border-radius: 10px;
-    box-shadow: 0px 5px 3rem rgba(0,0,0,0.35);
+    /*box-shadow: 0px 5px 3rem rgba(0,0,0,0.35);*/
 }
 
 .history{
-    width: 90vw;
-    max-width: 1200px;
-    height: 85vh;
-    max-height: 1000px;
+    width: 98vw;
+    max-width: 1420px;
+    height: 88vh;
+    max-height: 1050px;
 
     top:0;
     left:0;
@@ -419,19 +439,24 @@ body{
     bottom: 0;
 }
 
-.history h4{
+/*.history h4{
     color: #CE3250;
     font-size: 20px;
     font-weight: 700;
     text-align: center;
     margin-top: 50px;
-}
+}*/
+/*
 #home h4{
     margin-top: 0px;
     color: #CE3250;
     font-size: 20px;
     font-weight: 700;
     text-align: center;
+}*/
+.app-dewler-data{
+    margin: 10px;
+    padding-top: 20px;
 }
 .table-dewl{
     padding-left: 20px;
@@ -439,12 +464,13 @@ body{
     padding-bottom: 20px;
     width: 100%;
     max-height: 100%;
-    height: 87%;
+    height: 89%;
     margin-left: 0;
+    max-height: 100%;
 }
 
 .dewl-h{
-    max-height: 62vh;
+    max-height: 67vh;
     overflow-y: scroll;
 }
 
@@ -599,14 +625,16 @@ body{
     position: relative;
     width: 99%;
     height: auto;
-    background-color: #23272b;
-    border-radius: 10px;
+    background-color: #ffffff;
+    /* border-radius: 10px; */
+    border-top: 1px solid #929191;
 
     color: white;
     margin: 5px;
 }
 .detail-data{
     padding:15px;
+    color: black;
 }
 
 .top-transaction-icon{
@@ -724,6 +752,7 @@ body{
     position: absolute;
     border: none;
     background-color: #c8c8c8;
+    z-index: 1000;
 
     top: 65px;
 
@@ -921,8 +950,8 @@ body{
     position: relative;
     margin-top: 10px;
 
-    margin-left: 125px;
-    width: 70px;
+    margin-left: 120px;
+    width: 75px;
     height: 30px;
 
     border: none;
@@ -931,7 +960,7 @@ body{
     background-color: #0d95e8;
     color: white;
 
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
 
 }
@@ -1041,9 +1070,79 @@ body{
 
 
 
+/*Witness tabs*/
+.notification-icon{
+    color: #fd7e14;
+}
+.witness-player-selector{
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+}
+.chwin-content{
+    padding-top: 30px ;
+    padding-bottom: 30px;
+}
+
+.player-1{
+    color: #ffffff !important;
+    border-color: #CE3250 !important;
+    background-color: #CE3250 !important;
+}
+.player-1:hover{
+    color: #CE3250 !important;
+background-color: #fff !important;
+border-color: #CE3250 !important;
+}
+.player-2{
+    color: #fff !important;
+    border-color: #0d95e8 !important;
+    background-color: #0d95e8 !important;
+}
+.player-2:hover{
+    color: #0d95e8 !important;
+    background-color: #fff !important;
+    border-color: #0d95e8 !important;
+}
+.r-u-sure{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: px 0px 0px 0px ;
+    
+}
+.txt-blck{
+    color: black;
+}
+.r-u-sure .btn{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.r-u-sure h4{
+   margin-bottom: 8px;
+   color: #ce3250;
+}
+.choose-winner  h4{
+    color: black;
+    
+}
 /* Media query for mobile devices */
-/*@media only screen and (max-width: 375px) {*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
+    .nav-link{
+        padding-left: 11px !important;
+        padding-right: 11px !important;
+    }
+    /*Witness tab*/
+    .choose-winner  h5{
+        margin-bottom: 20px;
+    }
+    .choose-winner  h4{
+        margin-bottom: 20px;
+    }
+    .center-mobil {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
     .create-dewl-button-desktop{
         display: none !important;
     }
