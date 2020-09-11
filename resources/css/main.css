@@ -803,12 +803,12 @@ body{
 }
 
 .circle-plus > svg{
-
     color: #CE3250;
+    border: none;
 }
 
 .circle-plus {
-
+    font-weight: 600;
     color: white;
 }
 .friend-request-card{
