@@ -55,11 +55,18 @@ $(document).ready(function(){
     });
 
     $('.create-dewl-button-desktop').click(function(){
+        if(showMenuBox){toggleMenu();}else if(showFriendsBox){toggleFriendBox();}
         $('#createDewlModalButton').click();
     });
 
     $('.create-dewl-button-mobile').click(function(){
+        if(showMenuBox){toggleMenu();}else if(showFriendsBox){toggleFriendBox();}
         $('#createDewlModalButton').click();
+    });
+
+    $('.dewl-winrate').click(function(){
+        if(showMenuBox){toggleMenu();}else if(showFriendsBox){toggleFriendBox();}
+        $('#showFancyBox').click();
     });
 });
 

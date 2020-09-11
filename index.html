@@ -9,14 +9,19 @@
     <link rel="stylesheet" href="resources/css/font-awesome.min.css">
     <link rel="stylesheet" href="resources/css/main.css">
     <link rel="stylesheet" href="resources/css/loading.css">
+    <link rel="stylesheet" href="resources/jquery-ui/jquery-ui.min.css">
 
     <!-- BOOTSTRAP CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="resources/css/custom-fancy.css">
+
 
 </head>
 <body>
 
 <!-- Container -->
+
     <div id="load-container">
         <div class="loading">
             <div class="obj"></div>
@@ -29,19 +34,32 @@
             <div class="obj"></div>
         </div>
     </div>
+
+
+
     <!-- Menu Button -->
     <div class="menu-bar">
+
         <div class="menu-button-container">
             <button class="menu-button" ><em class="fas fa-bars"></em></button>
         </div>
         <div class="create-dewl-mobile">
             <button class="create-dewl-button-mobile"><div class="circle-plus"><em class="fas fa-plus"></em>&nbsp;Create Dewl</div></button>
-
         </div>
+
+        <div class="right-top-icon">
+            <div class="menu-img-right-icon"></div>
+        </div>
+
+        <!-- FANCYBOX MODAL BUTTON -->
+        <button class="login100-form-btn" data-fancybox="true" data-animation-duration="700" data-src="#fancyBoxModal" href="javascript:;" id="showFancyBox" style="display:none;">
+        </button>
+
     </div>
 
     <!-- MENU BOX -->
     <div class="menu-box">
+
         <button class="hide-menu-button" onclick="toggleMenu();"><em class="fas fa-times"></em></button>
         <div class="menu-img">
             <div class="menu-img-icon"></div>
@@ -82,7 +100,14 @@
         </div>
 
 
-
+        <!-- FANCYBOX MODAL -->
+        <div id="fancyBoxModal" class="animated-modal" style="display:none;">
+            <h4>Hype Rating&nbsp;<!--em class="fas fa-user-circle"></em--></h4>
+            <br/>
+            <div>
+                Here is the hype rating information
+            </div>
+        </div>
         <div class="friends-body">
             <div class="friends-request-notification">
                 <div class="request-notification-circle">
@@ -302,8 +327,8 @@
             <div class="table-dewl">
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-win" role="tab" aria-controls="nav-home" aria-selected="true" style="color: #08ADD5">Win</a>
-                        <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-loss" role="tab" aria-controls="nav-profile" aria-selected="false" style="color: #CE3250">Loss</a>
+                        <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-win" role="tab" aria-controls="nav-home" aria-selected="true" style="color: #08ADD5">All Wins</a>
+                        <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-loss" role="tab" aria-controls="nav-profile" aria-selected="false" style="color: #CE3250">All Losses</a>
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
@@ -312,7 +337,7 @@
                             <table class="table table-bordered table-striped">
                                 <thead style="color: #08ADD5;">
                                 <tr>
-                                    <th>Oponent</th>
+                                    <th>Opponent</th>
                                     <th>Stacks</th>
                                     <th>Date</th>
                                     <th>Action</th>
@@ -382,7 +407,7 @@
                             <table class="table table-bordered table-striped">
                                 <thead style="color: #CE3250;">
                                 <tr>
-                                    <th>Oponent</th>
+                                    <th>Opponent</th>
                                     <th>Stacks</th>
                                     <th>Date</th>
                                     <th>Action</th>
@@ -390,58 +415,52 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
                                 </tr>
                                 <tr>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
                                 </tr>
                                 <tr>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                </tr>
-                                <tr>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                </tr>
-                                <tr>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                </tr>
-                                <tr>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                </tr>
-                                <tr>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                </tr>
-                                <tr>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                </tr>
-                                <tr>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
-                                    <td>prueba</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                </tr><tr>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                </tr><tr>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                </tr><tr>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                </tr><tr>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                </tr><tr>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                </tr><tr>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
+                                    <td>Data</td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -758,7 +777,9 @@
         <!-- CREATE DEWL MODAL -->
         <button id="createDewlModalButton" style="display:none;" data-toggle="modal" data-target="#createDewlModal"></button>
         <!-- addStacksModal -->
-        <div class="modal fade" id="createDewlModal" tabindex="-1" aria-labelledby="addStacksModal" aria-hidden="true">
+        
+    </div>
+    <div class="modal fade" id="createDewlModal" tabindex="-1" aria-labelledby="addStacksModal" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <form action="">
@@ -769,18 +790,76 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <!--h5 class="text-center">Enter Stack Amount</h5-->
-
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Title</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" autocomplete="off" aria-describedby="xsxs" placeholder="Enter title">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Description</label>
+                                <textarea name="description" id="descriptio" class="form-control" cols="30" rows="3" placeholder="Enter a description" maxlength="140" required=""></textarea>
+                            </div>
+                            <label for="exampleInputEmail1">Stacks</label>
+                            <div class="input-group ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">$</span>
+                                </div>
+                                <input type="number" id="pot" name="pot" class="form-control" placeholder="10.00" aria-label="pot" aria-describedby="pot" required="" min="10">
+                            </div>
+                            <small id="emailHelp" class="form-text text-muted">10% of this amount goes to Dewlers</small>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" style="margin-top: 10px;">VS</label>
+                                <input type="text" class="form-control" autocomplete="off" list="players" id="exampleInputEmail1" aria-describedby="challenger" placeholder="Enter Dewler's Name">
+                                <datalist id="players">
+                                    <option value="Ariel Zelaya">
+                                    <option value="Gustavo Gomez">
+                                    <option value="Diego Gonzales">
+                                    <option value="Marvin Vigin">
+                                    <option value="Alex Mendez">
+                                    <option value="Sandy Florez"></option>
+                                </datalist>
+                            </div>
+                            <!-- Start Select witness -->
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <label class="custom-control-label" for="customCheck1">Select Witness</label>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" style="margin-top: 10px;">Witness</label>
+                                    <input type="text" class="form-control" autocomplete="off" list="players" id="exampleInputEmail1" aria-describedby="challenger" placeholder="Enter Witness' Name">
+                                    <datalist id="players">
+                                        <option value="Ariel Zelaya">
+                                        <option value="Gustavo Gomez">
+                                        <option value="Diego Gonzales">
+                                        <option value="Marvin Vigin">
+                                        <option value="Alex Mendez">
+                                        <option value="Sandy Florez"></option>
+                                    </datalist>
+                                </div>
+                              </div>
+                            <!-- End Select witness -->
+                            <div class="form-group" style="margin-bottom: 0px !important;">
+                                <label for="exampleInputEmail1" style="margin-top:10px;">Schedule Dewl</label>
+                                <input type="text" class="form-control" id="datepicker" aria-describedby="emailHelp" readonly placeholder="Select date">
+                            </div>
+                            <small id="emailHelp" class="form-text text-muted">Dewls expire after 24 hours of the scheduled date.</small>
+                            <div class="text-center" style="margin-top: 25px;">
+                                <button type="button" class="btn btn-success" data-dismiss="modal">DEWL</button>
+                                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancel</button>
+                            </div>
                         </div>
-                        <div class="modal-footer">
+                        <!-- <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             <input type="button" class="btn btn-success" value="Confirm">
-                        </div>
+                        </div> -->
+                        
                     </form>
                 </div>
             </div>
         </div>
-    </div>
+
+
+
 
 <!-- JS IMPORT -->
 <script src="resources/js/all.js"></script>
@@ -788,6 +867,13 @@
 <script src="resources/js/tilt.jquery.min.js"></script>
 <script src="resources/js/main.js"></script>
 <script src="resources/js/load.js"></script>
+<script src="resources/jquery-ui/jquery-ui.min.js"></script>
+<script src="resources/js/jquery.fancybox.js"></script>
+<script>
+    $( "#datepicker" ).datepicker({dateFormat: "yy-mm-dd",minDate:0});
+    
+  </script>
+  
 
 
 <!-- JS, Popper.js, and jQuery -->

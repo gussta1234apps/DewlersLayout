@@ -398,7 +398,7 @@ body.compensate-for-scrollbar {
     background: transparent;
     border: 0;
     border-radius: 0;
-    color: white;
+    color: black;
     cursor: pointer;
     opacity: .8;
     padding: 8px;
@@ -409,12 +409,12 @@ body.compensate-for-scrollbar {
 }
 
 .fancybox-close-small:hover {
-    color: white;
+    color: black;
     opacity: 1;
 }
 
 .fancybox-slide--html .fancybox-close-small {
-    color: white;
+    color: black;
     padding: 10px;
     right: 0;
     top: 0;
@@ -460,13 +460,13 @@ body.compensate-for-scrollbar {
 
 .fancybox-caption {
     background: linear-gradient(to top,
-        rgba(0, 0, 0, .85) 0%,
-        rgba(0, 0, 0, .3) 50%,
-        rgba(0, 0, 0, .15) 65%,
-        rgba(0, 0, 0, .075) 75.5%,
-        rgba(0, 0, 0, .037) 82.85%,
-        rgba(0, 0, 0, .019) 88%,
-        rgba(0, 0, 0, 0) 100%);
+    rgba(0, 0, 0, .85) 0%,
+    rgba(0, 0, 0, .3) 50%,
+    rgba(0, 0, 0, .15) 65%,
+    rgba(0, 0, 0, .075) 75.5%,
+    rgba(0, 0, 0, .037) 82.85%,
+    rgba(0, 0, 0, .019) 88%,
+    rgba(0, 0, 0, 0) 100%);
     bottom: 0;
     color: #eee;
     font-size: 14px;
@@ -653,7 +653,7 @@ body.compensate-for-scrollbar {
 
     .fancybox-slide--image .fancybox-close-small {
         background: white;
-        color: white;
+        color: black;
         height: 36px;
         opacity: 1;
         padding: 6px;
