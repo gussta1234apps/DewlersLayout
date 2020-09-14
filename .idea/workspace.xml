@@ -40,7 +40,8 @@
       <workItem from="1599231999386" duration="9268000" />
       <workItem from="1599248940633" duration="8063000" />
       <workItem from="1599777138815" duration="2048000" />
-      <workItem from="1599835553848" duration="1590000" />
+      <workItem from="1599835553848" duration="2198000" />
+      <workItem from="1600096788954" duration="4608000" />
     </task>
     <servers />
   </component>
@@ -48,10 +49,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1599778825580">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1599841732441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599778825580" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599841732441" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1600100408776">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600100408776" />
     <state x="667" y="76" width="585" height="888" key="find.popup" timestamp="1599158053332">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -60,11 +65,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="733" y="421" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599165371666" />
-    <state x="476" y="231" key="run.anything.popup" timestamp="1599250317673">
+    <state x="476" y="231" key="run.anything.popup" timestamp="1600100751215">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1599086618965" />
-    <state x="476" y="231" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599250317673" />
+    <state x="476" y="231" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600100751215" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599251301821">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
