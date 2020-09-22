@@ -662,7 +662,10 @@ body{
 }
 
 .first-player-button{
-    width: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    width: 110px;
     height: 40px;
     background-color: #0d95e8;
     border: none;
@@ -670,10 +673,14 @@ body{
 
     color: white;
     font-weight: 500;
+    font-size: 14px;
 }
 
 .second-player-button{
-    width: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    width: 110px;
     height: 40px;
     background-color: #CE3250;
     border: none;
@@ -681,10 +688,25 @@ body{
 
     color: white;
     font-weight: 500;
+    font-size: 14px;
 }
 /* ------------------------------------------------------ */
 
+.card-view-info{
+    border: none;
+    border-radius: 8px;
+    width: calc(100% - 20px);
+    max-width: 950px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 0px;
 
+    background-color: rgba(0,0,0,0.0);
+    height: auto;
+    padding-bottom: 15px;
+
+}
 /* ---------------------------------Dewl witness------------------------------------- */
 .card-table-with-witness{
     border: 3px #0d95e8 solid;
@@ -824,6 +846,13 @@ body{
     left: 10px;
 }
 /* ------------------------------- END WINS CARDS ---------------------------------- */
+/* --------------------------------------------------------------------------------- */
+.center-left{
+    align-items: left;
+}
+.center-right{
+    margin-right: 10%;
+}
 
 .detail-button{
 
@@ -849,7 +878,7 @@ body{
 }
 
 .current-card-column,.friends-col,.friends-count-card, .friends-request-count-card,.friend-request-card,.header-search,.request-notification-circle,
-.friends-load,.all-width{
+.friends-load,.all-width,.center-load{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1197,7 +1226,7 @@ body{
 
     font-size: 14px;
     font-weight: 500;
- }
+}
 
 /* FRIENDS CARD STYLE*/
 .friends-info-card{
@@ -1355,8 +1384,8 @@ body{
 }
 .player-1:hover{
     color: #CE3250 !important;
-background-color: #fff !important;
-border-color: #CE3250 !important;
+    background-color: #fff !important;
+    border-color: #CE3250 !important;
 }
 .player-2{
     color: #fff !important;
@@ -1372,7 +1401,7 @@ border-color: #CE3250 !important;
     background-color: #fff;
     border-radius: 10px;
     padding: px 0px 0px 0px ;
-    
+
 }
 .txt-blck{
     color: black;
@@ -1382,12 +1411,12 @@ border-color: #CE3250 !important;
     margin-right: 20px;
 }
 .r-u-sure h4{
-   margin-bottom: 8px;
-   color: #ce3250;
+    margin-bottom: 8px;
+    color: #ce3250;
 }
 .choose-winner  h4{
     color: black;
-    
+
 }
 
 #nav-tabContent2 {
@@ -1423,7 +1452,7 @@ border-color: #CE3250 !important;
         display: block !important;
     }
 
-  }
+}
 
 .right-top-icon{
     display: flex;
@@ -1469,7 +1498,7 @@ border-color: #CE3250 !important;
         height: 45vh;
         max-height: 45vh;
         padding: 10px;
-       /* background-color: #3b5998;*/
+        /* background-color: #3b5998;*/
     }
 
     .full-table{

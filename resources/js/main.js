@@ -111,5 +111,4 @@ let toggleFriendBox=()=>{
 let togglewinnerChooser=()=>{
     $('.choose-winner').toggle();
     $('.r-u-sure').toggle();
-
 }
